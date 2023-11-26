@@ -8,7 +8,7 @@ terraform {
 
   required_version = ">= 1.2.0"
 }
-
+# mapping
 variable "zones" {
   type = map(any)
   default = {
@@ -16,9 +16,9 @@ variable "zones" {
     "us-west-1" = "ami-56412"
   }
 }
-
+# user input 
 variable "selected_zone" {
-  description = "Enter the desired AWS region (e.g., us-east-1)"
+  description = "Enter the desired AWS region (e.g., us-east-1,)"
   type        = string
 }
 
